@@ -1,14 +1,14 @@
 <script>
 import { mapActions, mapGetters } from 'vuex';
 import ListHeader from '@/components/list-header.vue';
-import Modal from '@/components/modal.vue';
+import ModalComp from '@/components/modalComp.vue';
 import ProductDetail from './product-detail.vue';
 import ProductList from './product-list.vue';
 
 const captains = console;
 
 export default {
-  name: 'Products',
+  name: 'ProductsComp',
   data() {
     return {
       productToDelete: null,
@@ -23,7 +23,7 @@ export default {
     ListHeader,
     ProductList,
     ProductDetail,
-    Modal,
+    ModalComp,
   },
   created() {
     this.getProductsAction();
@@ -109,12 +109,12 @@ export default {
       </div>
     </div>
 
-    <Modal
-      class="modal-product"
+    <ModalComp
+      class="modalComp-product"
       :message="message"
       :isOpen="showModal"
       @handleNo="closeModal"
       @handleYes="deleteProduct"
-    ></Modal>
+    ></ModalComp>
   </div>
 </template>

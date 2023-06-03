@@ -12,7 +12,7 @@ export default {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <i class="fab js-logo fa-vuejs fa-2x" aria-hidden="true" />
+      <i class="fab js-logo fa-vuejs fa-2x" aria-hidden="true" />.
     </a>
     <router-link to="/" class="navbar-item nav-home">
       <span class="brand-first">MY</span>

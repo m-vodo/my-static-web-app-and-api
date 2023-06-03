@@ -47,47 +47,59 @@ export default {
     <div class="card-content">
       <div class="content">
         <div class="field" v-if="editingProduct.id">
-          <label class="label" for="id">id</label>
-          <input
-            class="input"
-            name="id"
-            placeholder="99999"
-            readonly
-            type="text"
-            v-model="editingProduct.id"
-          />
+          <label class="label" for="id">
+            <input
+              id="id"
+              class="input"
+              name="id"
+              placeholder="99999"
+              readonly
+              type="text"
+              v-model="editingProduct.id"
+            />
+            id
+          </label>
         </div>
         <div class="field">
-          <label class="label" for="name">name</label>
-          <input
-            class="input"
-            name="name"
-            placeholder="Oranges"
-            type="text"
-            v-model="editingProduct.name"
-          />
+          <label class="label" for="name">
+            <input
+              id="name"
+              class="input"
+              name="name"
+              placeholder="Oranges"
+              type="text"
+              v-model="editingProduct.name"
+            />
+            name
+          </label>
         </div>
         <div class="field">
-          <label class="label" for="description">description</label>
-          <input
-            class="input"
-            name="description"
-            placeholder="box"
-            type="text"
-            v-model="editingProduct.description"
-          />
+          <label class="label" for="description">
+            <input
+              id="description"
+              class="input"
+              name="description"
+              placeholder="box"
+              type="text"
+              v-model="editingProduct.description"
+            />
+            description
+          </label>
         </div>
         <div class="field">
-          <label class="label" for="quantity">quantity</label>
-          <input
-            class="input"
-            name="quantity"
-            placeholder="1"
-            type="number"
-            min="1"
-            max="100"
-            v-model="editingProduct.quantity"
-          />
+          <label class="label" for="quantity">
+            <input
+              id="quantity"
+              class="input"
+              name="quantity"
+              placeholder="1"
+              type="number"
+              min="1"
+              max="100"
+              v-model="editingProduct.quantity"
+            />
+            quantity
+          </label>
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@ export default new Router({
       name: 'products',
       component: () =>
         import(
-          /* webpackChunkName: "products" */ './views/products/products.vue'
+          /* webpackChunkName: "products" */ './views/products/productsComp.vue'
         ),
     },
     {
@@ -27,7 +27,7 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "about" */ './views/about.vue'),
+        import(/* webpackChunkName: "about" */ './views/aboutApp.vue'),
     },
     {
       path: '*',
